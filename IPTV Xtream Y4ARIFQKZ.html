@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Xtream IPTV Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f59e0b;
+            --accent: #ec4899;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+            --success: #10b981;
+            --danger: #ef4444;
+            --gradient-start: #6366f1;
+            --gradient-end: #8b5cf6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            direction: ltr;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--secondary);
+            font-size: 32px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .language-label {
+            color: white;
+            font-weight: 600;
+        }
+
+        .language-dropdown {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .language-dropdown option {
+            background: var(--primary-dark);
+            color: white;
+        }
+
+        .card {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-size: 26px;
+            color: var(--dark);
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .card-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        .account-details {
+            margin-top: 30px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .success-message {
+            text-align: center;
+            color: var(--success);
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-size: 22px;
+            padding: 15px;
+            background-color: #f0fdf4;
+            border-radius: 12px;
+            border: 2px solid #bbf7d0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .account-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--success);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .account-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+
+        .account-item:last-child {
+            border-bottom: none;
+        }
+
+        .account-label {
+            font-weight: 700;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .account-value {
+            color: var(--dark);
+            font-family: monospace;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .password-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-password {
+            background: linear-gradient(135deg, var(--secondary) 0%, #e67e22 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            cursor: pointer;
+            margin-left: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-password:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        .instructions {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            border: 2px dashed #cbd5e1;
+        }
+
+        .instructions h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .activation-message {
+            color: var(--secondary);
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+            display: none;
+            padding: 10px;
+            background-color: #fffbeb;
+            border-radius: 8px;
+            border: 1px solid #fde68a;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .card-title {
+                font-size: 22px;
+            }
+            
+            .account-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .password-container {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .language-selector {
+                position: static;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+        }
+
+        body[dir="rtl"] {
+            direction: rtl;
+        }
+        
+        body[dir="rtl"] .card-title::after {
+            right: 50%;
+            left: auto;
+            transform: translateX(50%);
+        }
+        
+        body[dir="rtl"] .account-box {
+            border-left: none;
+            border-right: 5px solid var(--success);
+        }
+        
+        body[dir="rtl"] .instructions ol {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        
+        body[dir="rtl"] .toggle-password {
+            margin-left: 0;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <i class="fas fa-tv"></i>
+                <span data-translate="premium_xtreme">Premium Xtreme IPTV</span>
+            </a>
+            <div class="language-selector">
+                <select class="language-dropdown" id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="nl">Nederlands</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="card">
+            <h2 class="card-title" data-translate="get_code">Get Free Xtream IPTV Code</h2>
+            
+            <div class="account-details" id="accountDetails">
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i> <span data-translate="congrats">Congratulations! Your account has been created successfully</span>
+                </div>
+                
+                <div class="account-box">
+                    <div class="account-item">
+                        <span class="account-label"><i class="fas fa-link"></i> <span data-translate="line_dns">Line DNS:</span></span>
+                        <span class="account-value" id="lineDnsValue"><span data-translate="loading">Loading...</span></span>
+                    </div>
+                    
+                    <div class="account-item">
+                        <span class="account-label"><i class="fas fa-user"></i> <span data-translate="username">Username:</span></span>
+                        <span class="account-value" id="usernameValue"><span data-translate="loading">Loading...</span></span>
+                    </div>
+                    
+                    <div class="account-item">
+                        <span class="account-label"><i class="fas fa-lock"></i> <span data-translate="password">Password:</span></span>
+                        <div class="password-container">
+                            <span class="account-value" id="passwordValue">••••••••••</span>
+                            <button class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i> <span data-translate="show_password">Show Password</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activation-message" id="activationMessage">
+                    <i class="fas fa-spinner fa-spin"></i> <span data-translate="activating">Activating code, please wait...</span>
+                </div>
+                
+                <div class="instructions">
+                    <h3><i class="fas fa-info-circle"></i> <span data-translate="how_to_use">How to use:</span></h3>
+                    <ol>
+                        <li data-translate="step1">Install IPTV Player app on your device</li>
+                        <li data-translate="step2">Open the app and choose to add Xtream Codes service</li>
+                        <li data-translate="step3">Enter the information shown above</li>
+                        <li data-translate="step4">Enjoy watching available channels and services</li>
+                    </ol>
+                </div>
+                
+                <button class="btn" onclick="window.location.reload()">
+                    <i class="fas fa-redo"></i> <span data-translate="create_new">Create New Account</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 <span data-translate="premium_xtreme">Premium Xtreme IPTV</span> - <span data-translate="rights_reserved">All Rights Reserved</span>
+    </div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwocXnUV_zLsBZRYKukb1vw9KO8N4lwsXDIwB56PtMSK1R1VUisTJ36-1CP7aSj-l7t7A/exec';
+
+    const defaultData = {
+        lineDNS: 'http://crystal.ottc.pro:80',
+        username: 'Not',
+        password: 'Not'
+    };
+
+    // ترجمة النصوص للغات المختلفة
+    const translations = {
+        en: {
+            premium_xtreme: "Premium Xtreme IPTV",
+            language: "Language:",
+            get_code: "Get Free Xtream IPTV Code",
+            congrats: "Congratulations! Your account has been created successfully",
+            line_dns: "Line DNS:",
+            username: "Username:",
+            password: "Password:",
+            show_password: "Show Password",
+            hide_password: "Hide Password",
+            activating: "Activating code, please wait...",
+            how_to_use: "How to use:",
+            step1: "Install IPTV Player app on your device",
+            step2: "Open the app and choose to add Xtream Codes service",
+            step3: "Enter the information shown above",
+            step4: "Enjoy watching available channels and services",
+            create_new: "Create New Account",
+            rights_reserved: "All Rights Reserved",
+            loading: "Loading..."
+        },
+        ar: {
+            premium_xtreme: "بريميوم إكستريم IPTV",
+            language: "اللغة:",
+            get_code: "احصل على كود IPTV Xtream مجاناً",
+            congrats: "مبروك! تم إنشاء حسابك بنجاح",
+            line_dns: "Line DNS:",
+            username: "اسم المستخدم:",
+            password: "كلمة المرور:",
+            show_password: "إظهار كلمة السر",
+            hide_password: "إخفاء كلمة السر",
+            activating: "جاري تفعيل الكود، يرجى الانتظار...",
+            how_to_use: "كيفية الاستخدام:",
+            step1: "قم بتثبيت تطبيق IPTV Player على جهازك",
+            step2: "افتح التطبيق واختر إضافة خدمة Xtream Codes",
+            step3: "أدخل المعلومات الظاهرة أعلاه",
+            step4: "استمتع بمشاهدة القنوات والخدمات المتاحة",
+            create_new: "إنشاء حساب جديد",
+            rights_reserved: "جميع الحقوق محفوظة",
+            loading: "جاري التحميل..."
+        },
+        fr: {
+            premium_xtreme: "Premium Xtreme IPTV",
+            language: "Langue:",
+            get_code: "Obtenez un code Xtream IPTV gratuit",
+            congrats: "Félicitations! Votre compte a été créé avec succès",
+            line_dns: "Line DNS:",
+            username: "Nom d'utilisateur:",
+            password: "Mot de passe:",
+            show_password: "Afficher le mot de passe",
+            hide_password: "Masquer le mot de passe",
+            activating: "Activation du code, veuillez patienter...",
+            how_to_use: "Comment utiliser:",
+            step1: "Installez l'application IPTV Player sur votre appareil",
+            step2: "Ouvrez l'application et choisissez d'ajouter le service Xtream Codes",
+            step3: "Entrez les informations indiquées ci-dessus",
+            step4: "Profitez des chaînes et services disponibles",
+            create_new: "Créer un nouveau compte",
+            rights_reserved: "Tous droits réservés",
+            loading: "Chargement..."
+        },
+        it: {
+            premium_xtreme: "Premium Xtreme IPTV",
+            language: "Lingua:",
+            get_code: "Ottieni il codice Xtream IPTV gratuito",
+            congrats: "Congratulazioni! Il tuo account è stato creato con successo",
+            line_dns: "Line DNS:",
+            username: "Nome utente:",
+            password: "Password:",
+            show_password: "Mostra password",
+            hide_password: "Nascondi password",
+            activating: "Attivazione codice, attendere prego...",
+            how_to_use: "Come usare:",
+            step1: "Installa l'app IPTV Player sul tuo dispositivo",
+            step2: "Apri l'app e scegli di aggiungere il servizio Xtream Codes",
+            step3: "Inserisci le informazioni mostrate sopra",
+            step4: "Goditi la visione dei canali e servizi disponibili",
+            create_new: "Crea nuovo account",
+            rights_reserved: "Tutti i diritti riservati",
+            loading: "Caricamento..."
+        },
+        de: {
+            premium_xtreme: "Premium Xtreme IPTV",
+            language: "Sprache:",
+            get_code: "Kostenlosen Xtream IPTV Code erhalten",
+            congrats: "Herzlichen Glückwunsch! Ihr Konto wurde erfolgreich erstellt",
+            line_dns: "Line DNS:",
+            username: "Benutzername:",
+            password: "Passwort:",
+            show_password: "Passwort anzeigen",
+            hide_password: "Passwort ausblenden",
+            activating: "Code wird aktiviert, bitte warten...",
+            how_to_use: "So verwenden Sie:",
+            step1: "Installieren Sie die IPTV Player App auf Ihrem Gerät",
+            step2: "Öffnen Sie die App und wählen Sie den Xtream Codes Service aus",
+            step3: "Geben Sie die oben angezeigten Informationen ein",
+            step4: "Genießen Sie die verfügbaren Kanäle und Dienste",
+            create_new: "Neues Konto erstellen",
+            rights_reserved: "Alle Rechte vorbehalten",
+            loading: "Laden..."
+        },
+        es: {
+            premium_xtreme: "Premium Xtreme IPTV",
+            language: "Idioma:",
+            get_code: "Obtén código Xtream IPTV gratis",
+            congrats: "¡Felicidades! Tu cuenta ha sido creada exitosamente",
+            line_dns: "Line DNS:",
+            username: "Nombre de usuario:",
+            password: "Contraseña:",
+            show_password: "Mostrar contraseña",
+            hide_password: "Ocultar contraseña",
+            activating: "Activando código, por favor espere...",
+            how_to_use: "Cómo usar:",
+            step1: "Instala la aplicación IPTV Player en tu dispositivo",
+            step2: "Abre la aplicación y elige agregar el servicio Xtream Codes",
+            step3: "Ingresa la información mostrada arriba",
+            step4: "Disfruta de los canales y servicios disponibles",
+            create_new: "Crear nueva cuenta",
+            rights_reserved: "Todos los derechos reservados",
+            loading: "Cargando..."
+        },
+        nl: {
+            premium_xtreme: "Premium Xtreme IPTV",
+            language: "Taal:",
+            get_code: "Krijg gratis Xtream IPTV-code",
+            congrats: "Gefeliciteerd! Uw account is succesvol aangemaakt",
+            line_dns: "Line DNS:",
+            username: "Gebruikersnaam:",
+            password: "Wachtwoord:",
+            show_password: "Toon wachtwoord",
+            hide_password: "Verberg wachtwoord",
+            activating: "Code activeren, even geduld...",
+            how_to_use: "Hoe te gebruiken:",
+            step1: "Installeer de IPTV Player-app op uw apparaat",
+            step2: "Open de app en kies om Xtream Codes-service toe te voegen",
+            step3: "Voer de bovenstaande informatie in",
+            step4: "Geniet van het kijken naar beschikbare kanalen en diensten",
+            create_new: "Nieuw account aanmaken",
+            rights_reserved: "Alle rechten voorbehouden",
+            loading: "Laden..."
+        }
+    };
+
+    async function loadIPTVData() {
+        try {
+            const response = await fetch(`${scriptURL}?action=getIPTVData&timestamp=${Date.now()}`);
+            if (!response.ok) throw new Error(`Network error: ${response.status}`);
+            const data = await response.json();
+            return data.result === 'success' ? data : defaultData;
+        } catch (error) {
+            console.error('Failed to fetch IPTV data:', error);
+            return defaultData;
+        }
+    }
+
+    function updateAccountDetails(iptvData) {
+        document.getElementById('lineDnsValue').textContent = iptvData.lineDNS;
+        document.getElementById('usernameValue').textContent = iptvData.username;
+        const passwordValue = document.getElementById('passwordValue');
+        passwordValue.textContent = '••••••••••';
+        passwordValue.setAttribute('data-password', iptvData.password);
+    }
+
+    function togglePassword() {
+        const passwordValue = document.getElementById('passwordValue');
+        const togglePassword = document.getElementById('togglePassword');
+        const activationMessage = document.getElementById('activationMessage');
+        
+        // Show activation message
+        activationMessage.style.display = 'block';
+        
+        // Hide message after 3 seconds and toggle password
+        setTimeout(() => {
+            activationMessage.style.display = 'none';
+            
+            const realPassword = passwordValue.getAttribute('data-password');
+            const currentLang = document.getElementById('languageSelector').value;
+            
+            if (passwordValue.textContent === '••••••••••') {
+                passwordValue.textContent = realPassword;
+                togglePassword.innerHTML = `<i class="fas fa-eye-slash"></i> ${translations[currentLang].hide_password}`;
+            } else {
+                passwordValue.textContent = '••••••••••';
+                togglePassword.innerHTML = `<i class="fas fa-eye"></i> ${translations[currentLang].show_password}`;
+            }
+        }, 3000);
+    }
+
+    function changeLanguage(lang) {
+        // Update all elements with data-translate attribute
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            if (translations[lang][key]) {
+                element.textContent = translations[lang][key];
+            }
+        });
+        
+        // Update HTML direction for RTL languages
+        if (lang === 'ar') {
+            document.body.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+            document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+            document.body.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', 'ltr');
+        }
+        
+        // Update password button text if password is visible
+        const passwordValue = document.getElementById('passwordValue');
+        const togglePassword = document.getElementById('togglePassword');
+        if (passwordValue.textContent !== '••••••••••') {
+            togglePassword.innerHTML = `<i class="fas fa-eye-slash"></i> ${translations[lang].hide_password}`;
+        } else {
+            togglePassword.innerHTML = `<i class="fas fa-eye"></i> ${translations[lang].show_password}`;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', async function() {
+        // Load and display IPTV data directly
+        const iptvData = await loadIPTVData();
+        updateAccountDetails(iptvData);
+        
+        // Add click event to show password button
+        document.getElementById('togglePassword').addEventListener('click', togglePassword);
+        
+        // Add change event to language selector
+        document.getElementById('languageSelector').addEventListener('change', function() {
+            changeLanguage(this.value);
+        });
+        
+        // Set initial language
+        changeLanguage('en');
+    });
+</script>
+</body>
+</html>
